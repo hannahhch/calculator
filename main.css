@@ -5,32 +5,43 @@
 }
 
 .num-btn, .clear{
-  border: solid 1px white;
+  border: solid 1px #7ABF6C;
   background-color: #64B255;
   color: white;
   height: 95px;
   width: 95px;
   display: inline-block;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  float: left;
 }
 
 .math-btn {
-  border: solid 1px white;
+  border: solid 1px #7ABF6C;
   background-color: #83C178;
-  color: black;
+  color: #517A47;
   height: 95px;
   width: 95px;
   display: inline-block;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+
 }
 
 #result {
-  border: solid 1px white;
+  border: solid 1px #7ABF6C;
   height: 95px;
-  width: 293px;
-  display: inline;
+  width: 285px;
+  display: inline-block;
   background-color: #64B255;
   color: white;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+
+
 }
 
 body {
-  background-color: grey;
+  background-color: #FFE4E1;
 }
