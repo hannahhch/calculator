@@ -1,0 +1,36 @@
+.calculator-body{
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;
+}
+
+.num-btn, .clear{
+  border: solid 1px white;
+  background-color: #64B255;
+  color: white;
+  height: 95px;
+  width: 95px;
+  display: inline-block;
+}
+
+.math-btn {
+  border: solid 1px white;
+  background-color: #83C178;
+  color: black;
+  height: 95px;
+  width: 95px;
+  display: inline-block;
+}
+
+#result {
+  border: solid 1px white;
+  height: 95px;
+  width: 293px;
+  display: inline;
+  background-color: #64B255;
+  color: white;
+}
+
+body {
+  background-color: grey;
+}
