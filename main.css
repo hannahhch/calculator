@@ -9,8 +9,9 @@ body {
   margin: 10% 0;
 }
 
+
 /*styles for number button and clear button*/
-.num-btn, .clear{
+.num-btn, .clear, .equal-btn{
   border: solid 1px #7ABF6C;
   background-color: #64B255;
   color: white;
@@ -23,8 +24,12 @@ body {
   float: left;
 }
 
+.clear {
+  height:97px;
+}
+
 /* changes background color on hover for numbers*/
-.num-btn:hover, .clear:hover {
+.num-btn:hover, .clear:hover, .equal-btn:hover {
   background-color: #83C178;
 }
 
@@ -49,12 +54,14 @@ body {
 #result {
   border: solid 1px #7ABF6C;
   height: 95px;
-  width: 285px;
+  width: 283px;
+  float: right;
   display: inline-block;
   background-color: #64B255;
   color: white;
-  font-size: 2em;
+  font-size: 3.5em;
   font-family: 'Lato', sans-serif;
+  text-align: right;
 }
 
 /*removes light blue focus on buttons*/
