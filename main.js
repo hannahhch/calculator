@@ -43,3 +43,7 @@ $('.equal-btn').click(function(){
   number = "";
   newNumber = "";
 });
+
+$('#pattern').click(function(){
+  $('body').toggleClass('gradient-pattern');
+});
