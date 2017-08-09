@@ -19,3 +19,11 @@ $('.math-btn').click(function(){
   number = "";
   resultDiv.text("0");
 });
+
+$('.clear').click(function(){
+  number = "";
+  resultDiv.text("0");
+  if ($(this).attr("class")=== "clear") {
+    newNumber = "";
+  }
+})

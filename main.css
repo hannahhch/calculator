@@ -3,8 +3,6 @@ body {
   -webkit-box-sizing: content-box;
  -moz-box-sizing: content-box;
  box-sizing: content-box;
- width: 320px;
- height: 320px;
  border: none;
  font: normal 100%/normal Arial, Helvetica, sans-serif;
  color: rgb(255, 255, 255);
@@ -22,11 +20,13 @@ body {
   }
 
 .calculator-body{
-  position: absolute;
-  margin: 5% 34.8%;
   box-shadow: 10px 10px 5px #888888;
+  width: 380px;
+  margin: 5% auto;
+}
 
-
+.calculator-buttons {
+  position: absolute;
 }
 
 
@@ -37,6 +37,7 @@ body {
   color: white;
   height: 95px;
   width: 95px;
+  position: relative;
   display: inline-block;
   font-size: 2em;
   font-family: 'Lato', sans-serif;
@@ -46,6 +47,7 @@ body {
 
 .clear {
   height:97px;
+  width: 95px;
 }
 
 /* changes background color on hover for numbers*/
@@ -62,7 +64,9 @@ body {
   width: 95px;
   display: inline-block;
   font-size: 2em;
+  position: relative;
   font-family: 'Lato', sans-serif;
+
 }
 
 /*changes text color of math buttons on hover*/
@@ -76,7 +80,7 @@ body {
   height: 95px;
   width: 263px;
   padding: 0 10px;
-  float: right;
+  position: relative;
   display: inline-block;
   background-color: #64B255;
   color: white;
