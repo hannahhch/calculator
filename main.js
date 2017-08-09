@@ -12,7 +12,7 @@ $('.num-btn').click(function(){
   resultDiv.text(number);
 });
 
-/*when operator button is click, clear numbers*/
+/*when math button is clicked, display operator*/
 $('.math-btn').click(function(){
   operator = $(this).text();
   newNumber = number;
@@ -20,6 +20,7 @@ $('.math-btn').click(function(){
   resultDiv.text(operator);
 });
 
+/*when clear button is click, clear */
 $('.clear').click(function(){
   number = "";
   resultDiv.text("0");
@@ -30,13 +31,13 @@ $('.clear').click(function(){
 
 $('.equal-btn').click(function(){
   if (operator === "+") {
-    number = (parseInt(number)+ parseInt (newNumber)).toString();
+    number = (parseFloat(number)+ parseFloat (newNumber)).toString();
   } else if (operator === "-") {
-    number = (parseInt(newNumber) - parseInt (number)).toString();
+    number = (parseFloat(newNumber) - parseFloat (number)).toString();
   } else if (operator === "/") {
-    number = (parseInt(newNumber) / parseInt (number)).toString();
+    number = (parseFloat(newNumber) / parseFloat (number)).toString();
   } else if (operator === "x") {
-    number = (parseInt(newNumber) * parseInt (newNumber)).toString();
+    number = (parseFloat(newNumber) * parseFloat (newNumber)).toString();
   }
   resultDiv.text(number);
   number = "";
