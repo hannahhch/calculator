@@ -17,7 +17,7 @@ $('.math-btn').click(function(){
   operator = $(this).text();
   newNumber = number;
   number = "";
-  resultDiv.text("0");
+  resultDiv.text(operator);
 });
 
 $('.clear').click(function(){
@@ -26,4 +26,19 @@ $('.clear').click(function(){
   if ($(this).attr("class")=== "clear") {
     newNumber = "";
   }
-})
+});
+
+$('.equal-btn').click(function(){
+  if (operator === "+") {
+    number = (parseInt(number)+ parseInt (newNumber)).toString();
+  } else if (operator === "-") {
+    number = (parseInt(newNumber) - parseInt (number)).toString();
+  } else if (operator === "/") {
+    number = (parseInt(newNumber) / parseInt (number)).toString();
+  } else if (operator === "x") {
+    number = (parseInt(newNumber) * parseInt (newNumber)).toString();
+  }
+  resultDiv.text(number);
+  number = "";
+  newNumber = "";
+});
