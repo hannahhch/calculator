@@ -46,10 +46,6 @@ body {
   margin: 5% auto;
 }
 
-.calculator-buttons {
-  position: absolute;
-}
-
 
 /*styles for number button and clear button*/
 .num-btn, .clear, .equal-btn{
@@ -58,7 +54,6 @@ body {
   color: white;
   height: 95px;
   width: 95px;
-  position: relative;
   display: inline-block;
   font-size: 2em;
   font-family: 'Lato', sans-serif;
@@ -67,7 +62,7 @@ body {
 }
 
 .clear {
-  height:97px;
+  height:95px;
   width: 95px;
 }
 
@@ -85,7 +80,6 @@ body {
   width: 95px;
   display: inline-block;
   font-size: 2em;
-  position: relative;
   font-family: 'Lato', sans-serif;
 
 }
@@ -99,15 +93,15 @@ body {
 #result {
   border: solid 1px #7ABF6C;
   height: 95px;
-  width: 263px;
+  width: 285px;
   padding: 0 10px;
-  position: relative;
   display: inline-block;
   background-color: #64B255;
   color: white;
   font-size: 3.5em;
   font-family: 'Lato', sans-serif;
   text-align: right;
+  box-sizing: border-box;
 }
 
 /*removes light blue focus on buttons*/
